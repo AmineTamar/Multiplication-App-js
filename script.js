@@ -1,17 +1,27 @@
 
 
 
-const btnEl = document.querySelector(".btn")
+const btnElReset = document.querySelector(".reset");
+const btnElSubmit = document.querySelector(".submitbtn");
 
 
-btnEl.addEventListener("mouseover",(event)=>{
-  const x = (event.pageX - btnEl.offsetLeft);
-  const y = (event.pageY - btnEl.offsetTop);
-  btnEl.style.setProperty("--xPos", x + "px")
-  btnEl.style.setProperty("--yPos", y + "px")
+btnElReset.addEventListener("mouseover",(event)=>{
+  const x = (event.pageX - btnElReset.offsetLeft);
+  const y = (event.pageY - btnElReset.offsetTop);
+  btnElReset.style.setProperty("--xPos", x + "px")
+  btnElReset.style.setProperty("--yPos", y + "px")
   
 
   });
+
+  btnElSubmit.addEventListener("mouseover",(event)=>{
+    const x2 = (event.pageX - btnElSubmit.offsetLeft);
+    const y2 = (event.pageY - btnElSubmit.offsetTop);
+    btnElSubmit.style.setProperty("--x2Pos", x2 + "px")
+    btnElSubmit.style.setProperty("--y2Pos", y2 + "px")
+    
+  
+    });
 
   const num1 = Math.ceil(Math.random()*10)
 const num2 = Math.ceil(Math.random()*10)

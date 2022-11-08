@@ -71,7 +71,7 @@ overflow: hidden;
 
 }
 
-.btn::before{
+.reset::before{
   
   content: '';
   position: absolute;
@@ -82,6 +82,24 @@ overflow: hidden;
   border-radius: 50%;
   top: var(--yPos);
   left: var(--xPos);
+
+  transform: translate(-50%,-50%);
+  transition:  width 0.8s, height 0.8s;
+  
+  
+  
+}
+.submitbtn::before{
+  
+  content: '';
+  position: absolute;
+  background-color: #C20114;
+  width: 0;
+  height: 0;
+
+  border-radius: 50%;
+  top: var(--y2Pos);
+  left: var(--x2Pos);
 
   transform: translate(-50%,-50%);
   transition:  width 0.8s, height 0.8s;
